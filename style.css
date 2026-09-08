@@ -1,9 +1,37 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.heading {
     color: blue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#heading {
+    color: red;
+    background-color: yellow;
+    font-size: 1.5rem;
+    width: 25%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 button {
-    background-color: aqua;
-    color: red;
+    background-color: blue;
+    color: white;
 }
