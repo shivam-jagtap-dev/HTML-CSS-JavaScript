@@ -14,3 +14,19 @@ divs[0].innerText = "This is the first box";
 console.dir(divs[0].innerText);
 divs[1].innerText = "This is the second box";
 divs[2].innerText = "This is the third box";
+
+//Create a new button elemeny. Give it a text "Click me", background color of red & text color of white. Append it to the body of the document.
+//Insert the button as the first element inside the body tag.
+
+let body = document.querySelector("body");
+let button = document.createElement("button");
+button.innerText = "Click me";
+
+body.prepend(button);
+
+//Create a <p> tag in html, give it a class & some styling.
+//Now create a new class in css and try to append this class to the <p> element.
+//Did you notce, how you overwrite the class name when you add a new one?
+//Solve this problem using classList
+let para = document.querySelector("p");
+para.classList.add("newpara");

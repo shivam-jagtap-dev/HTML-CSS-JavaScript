@@ -11,3 +11,12 @@ button {
     background-color: red;
     color: white;
 }
+
+.content {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.newpara {
+    background-color: blue;
+}
