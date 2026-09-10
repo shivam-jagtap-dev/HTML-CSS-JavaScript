@@ -4,16 +4,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    /* display: flex;
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+    /* */
+    height: :autofill;
     background-color: #f4f4f4;
+    */
+}
+
+#newId {
+    height: 500px;
+    width: 500px;
+    background-color: grey;
+    border: 1px solid black;
+    color: white;
 }
 
 .heading {
@@ -25,7 +35,7 @@
     color: red;
     background-color: yellow;
     font-size: 1.5rem;
-    width: 25%;
+    width: 50%;
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;

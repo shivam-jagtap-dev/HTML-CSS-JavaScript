@@ -56,3 +56,52 @@
     //TextContent
     console.dir(div.textContent);
 }
+
+{
+    //Attributes of DOM Manipulation
+
+    //getAttribute()
+    let div = document.querySelector("div");
+    console.log(div);
+
+    let id = div.getAttribute("id"); //--> This will retrieve the value of the "id" attribute of the div element.
+    console.log(id);
+
+    let className = div.getAttribute("class"); //--> This will retrieve the value of the "class" attribute of the div element.
+    console.log(className);
+
+    let name = div.getAttribute("name"); //--> This will retrieve the value of the "name" attribute of the div element. If the attribute does not exist, it will return null.
+    console.log(name);
+
+    //setAttribute() --> change the value of an attribute or add a new attribute to an element.
+    div.setAttribute("id", "newId");
+    console.log(div.getAttribute("id")); //--> This will retrieve the updated value of the "id" attribute of the div element, which is now "newId".
+}
+
+{
+    //node.style
+    let div = document.querySelector("div");
+
+    div.style.backgroundColor = "red";
+    div.style.color = "black";
+}
+
+{
+    //Insert Elements 
+    let newBtn = document.createElement("button");
+    newBtn.innerText = "Click Me!";
+    console.log(newBtn);
+
+    let div = document.querySelector("div");
+    div.append(newBtn); //--> This will append the new button element as the last child of the div element.
+
+    div.prepend(newBtn); //--> This will prepend the new button element as the first child of the div element.
+
+    div.before(newBtn); //--> This will insert the new button element before the div element in the DOM.
+
+    div.after(newBtn); //--> This will insert the new button element after the div element in the DOM.
+
+    //Delete Elements
+    let paragraph = document.querySelector("p");
+    paragraph.remove(); //--> This will remove the paragraph element from the DOM.
+}

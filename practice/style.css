@@ -6,3 +6,8 @@
     text-align: center;
     margin-top: 10px;
 }
+
+button {
+    background-color: red;
+    color: white;
+}
