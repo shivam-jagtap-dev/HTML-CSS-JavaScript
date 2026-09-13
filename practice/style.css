@@ -20,3 +20,14 @@ button {
 .newpara {
     background-color: blue;
 }
+
+.dark {
+    background-color: darkslategray;
+    color: white;
+
+}
+
+.light {
+    background-color: white;
+    color: black;
+}

@@ -30,3 +30,22 @@ body.prepend(button);
 //Solve this problem using classList
 let para = document.querySelector("p");
 para.classList.add("newpara");
+
+
+{
+    let modebtn = document.querySelector("#mode");
+    let body = document.querySelector("body");
+    let currMode = "light";
+
+    modebtn.addEventListener("click", () => {
+        if (currMode === "light") {
+            currMode = "dark";
+            body.classList.add("dark");
+        } else {
+            currMode = "light";
+            body.classList.add("light");
+        }
+        console.log(currMode);
+    });
+
+}
