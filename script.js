@@ -109,9 +109,50 @@
 {
     //Events
     //Event handle
-    let btn1 = document.getElementById("#btn1");
+    //Syntax: node.event = () => { code to be executed }
+    let btn1 = document.querySelector("#btn1");
 
     btn1.onclick = () => {
         console.log("Button clicked!");
     }
+
+    let div = document.querySelector("div");
+    // div.onmouseover = () => {
+    //     console.log("Mouse over the div!");
+    // }
+
+    //Event Object
+    btn1.onclick = (event) => {
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+        console.log(event.clientX, event.clientY);
+    }
+
+    //Event Listeners
+    //syntax: node.addEventListener(event,callback)
+    let btn2 = document.querySelector("#btn2");
+    btn2.addEventListener("click", () => {
+        console.log("Button was clicked using addEventListener! Handler 1");
+    });
+
+    btn2.addEventListener("click", () => {
+        console.log("Button was clicked using addEventListener! Handler 2");
+    });
+
+    btn2.addEventListener("click", () => {
+        console.log("Button was clicked using addEventListener! Handler 3");
+    });
+
+
+    const handler4 = () => {
+        console.log("Button was clicked using addEventListener! Handler 4   ");
+    };
+
+    btn2.addEventListener("click", handler4);
+
+
+    //syntax: node.removeEventListener(event,callback)
+    btn2.removeEventListener("click", handler4);
+
 }
