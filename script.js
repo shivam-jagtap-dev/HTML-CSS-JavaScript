@@ -105,3 +105,13 @@
     let paragraph = document.querySelector("p");
     paragraph.remove(); //--> This will remove the paragraph element from the DOM.
 }
+
+{
+    //Events
+    //Event handle
+    let btn1 = document.getElementById("#btn1");
+
+    btn1.onclick = () => {
+        console.log("Button clicked!");
+    }
+}
